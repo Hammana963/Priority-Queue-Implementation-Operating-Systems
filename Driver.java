@@ -1,18 +1,3 @@
-/**
- * Driver.java
- * 
- * Demonstrates different scheduling algorithms.
- * 
- * Usage:
- *  
- *  java Driver <schedule> <algorithm>
- *
- * where 
- *  schedule is schedule of tasks
- *
- *  algorithm = [FCFS, SJF, PRI, RR]
- */
-  
 import java.util.*;
 import java.io.*;
 
@@ -44,9 +29,6 @@ public class Driver
         switch(choice) {
             case "FCFS":
                 scheduler = new FCFS(queue);
-                break;
-            case "SJF":
-                scheduler = new SJF(queue);
                 break;
             case "PRI":
                 scheduler = new Priority(queue);

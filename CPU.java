@@ -1,11 +1,3 @@
-/**
- * "Virtual" CPU
- *
- * This virtual CPU also maintains system time.
- *
- * @author Greg Gagne - March 2016
- */
- 
 public class CPU
 {
     // the multiplier for simulating executing the task

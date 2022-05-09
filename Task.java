@@ -1,20 +1,3 @@
-/**
- * Task to be scheduled by the scheduling alogrithm.
- *
- * Each task is represented by
- *
- *  String name - a task name, not necessarily unique
- *
- *  int tid - unique task identifier
- *
- *  int priority - the relative priority of a task where a higher number indicates
- *  higher relative priority.
- *
- *  int burst - the CPU burst of this this task
- * 
- * Edited by: Megan Francis
- */
-
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Task
