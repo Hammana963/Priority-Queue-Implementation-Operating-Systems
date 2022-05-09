@@ -8,6 +8,7 @@ public class Priority implements Algorithm
   
   public Priority(List<Task> queue) {
     this.queue = queue;
+    //set up list to store finished tasks
     this.finishedTasks = new ArrayList<Task>(queue.size());
   }
   
@@ -19,7 +20,7 @@ public class Priority implements Algorithm
     
     while (!queue.isEmpty()) {
       currentTask = pickNextTask();
-      
+      //implements algorithm
       CPU.run(currentTask, currentTask.getBurst());
     }
   }
@@ -42,7 +43,7 @@ public class Priority implements Algorithm
     if (currentTask != null){
       finishedTasks.add(currentTask);
     }
-    //Makes sure that all tasks are eventually added to the finsihed task list
+    //Makes sure that all tasks are eventually added to the finished task list
     if (queue.size() == 1){
       finishedTasks.add(queue.get(0));
     }
