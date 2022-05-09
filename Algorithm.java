@@ -1,9 +1,3 @@
-/**
- * Interface representing a generic scheduling algorithm.
- *
- * @author Greg Gagne - March 2016
- */
-
 public interface Algorithm
 {
     /**
